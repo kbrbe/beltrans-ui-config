@@ -1,0 +1,182 @@
+{
+    "id": "organizations",
+    "endpoint": {
+        "url": "http://ql-beltrans-dev-srv01:8001",
+        "useAuth": false,
+        "prefixesFile": "SparqlQueriesPrefixes.js"
+    },
+    "sparqlQueriesFile": "organizations.js",
+    "baseURI": "http://kbr.be/id/data",
+    "URITemplate": "<BASE_URI>/<LOCAL_ID>",
+    "facetClass": "schema:Organization",
+    "frontPageImage": "main_page/Publishers.jpg",
+    "searchMode": "faceted-search",
+    "enableDynamicLanguageChange": false,
+    "defaultActiveFacets": [
+      "prefLabel"
+    ],
+    "defaultTab": "table",
+    "defaultInstancePageTab": "table",
+    "includeInSitemap": true,
+    "resultClasses": {
+        "organizations": {
+            "paginatedResultsConfig": {
+                "tabID": 0,
+                "component": "ResultTable",
+                "tabPath": "table",
+                "tabIcon": "CalendarViewDay",
+                "propertiesQueryBlock": "organizationProperties",
+                "paginatedResultsAlwaysExpandRows": false,
+                "paginatedResultsRowContentMaxHeight": 190,
+                "pagesize": 50,
+                "sortBy": null,
+                "sortDirection": null
+            },
+            "instanceConfig": {
+                "propertiesQueryBlock": "organizationProperties",
+                "instancePageResultClasses": {
+                    "instancePageTable": {
+                        "tabID": 0,
+                        "component": "InstancePageTable",
+                        "tabPath": "table",
+                        "tabIcon": "CalendarViewDay"
+                    },
+                    "instancePageExport": {
+                        "tabID": 1,
+                        "component": "Export",
+                        "tabPath": "export",
+                        "tabIcon": "CloudDownload",
+                        "pageType": "instancePage"
+                    }
+                }
+            }
+        },
+        "export": {
+            "tabID": 8,
+            "component": "Export",
+            "tabPath": "export",
+            "tabIcon": "CloudDownload",
+            "resultClass": "organizations",
+            "facetClass": "organizations"
+        },
+        "jenaText": {
+            "propertiesQueryBlock": "fullTextSearchProperties"
+        }
+    },
+    "properties": [
+        {
+            "id": "uri",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": true,
+            "sortValues": true,
+            "numberedList": false,
+            "onlyOnInstancePage": true
+        },
+        {
+            "id": "prefLabel",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 200
+        },
+        {
+            "id": "isni",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": true,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 20
+        },
+        {
+            "id": "kbr",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": true,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 20
+        },
+        {
+            "id": "location",
+            "valueType": "object",
+            "makeLink": false,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 200,
+            "collapsedMaxWords": 3,
+            "priority": 5
+        },
+        {
+            "id": "country",
+            "valueType": "object",
+            "makeLink": false,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 20,
+            "collapsedMaxWords": 3,
+            "priority": 5
+        },
+        {
+            "id": "region",
+            "valueType": "string",
+            "makeLink": false,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 20,
+            "collapsedMaxWords": 3,
+            "priority": 5
+        }
+
+    ],
+    "facets": {
+        "prefLabel": {
+            "sortByPredicate": "schema:name"
+        },
+        "location": {
+            "containerClass": "five",
+            "facetType": "list",
+            "filterType": "textFilter",
+            "facetLabelPredicate": "rdfs:label",
+            "predicate": "schema:addressLocality",
+            "sortByPredicate": "schema:addressLocality/rdfs:label",
+            "searchField": true,
+            "sortButton": true,
+            "sortBy": "instanceCount",
+            "sortDirection": "desc",
+            "pieChartButton": true
+        },
+        "country": {
+            "containerClass": "five",
+            "facetType": "list",
+            "filterType": "textFilter",
+            "predicate": "schema:addressLocality",
+            "facetLabelPredicate": "rdfs:comment",
+            "sortByPredicate": "schema:addressLocality/rdfs:comment",
+            "searchField": true,
+            "sortButton": true,
+            "sortBy": "instanceCount",
+            "sortDirection": "desc",
+            "pieChartButton": true
+        },
+        "region": {
+            "containerClass": "five",
+            "facetType": "list",
+            "filterType": "textFilter",
+            "predicate": "schema:addressRegion",
+            "facetLabelPredicate": "schema:addressRegion",
+            "sortByPredicate": "schema:addressRegion",
+            "searchField": true,
+            "sortButton": true,
+            "sortBy": "instanceCount",
+            "sortDirection": "desc",
+            "pieChartButton": true
+        } 
+    }
+}

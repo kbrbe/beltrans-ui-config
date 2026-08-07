@@ -1,0 +1,499 @@
+{
+  "languageLabel": "English",
+  "html": {
+    "title": "BELTRANS database",
+    "description": "This Sampo-UI instance enables you to explore the corpus of Intra-Belgian book translations 1970-2020."
+  },
+  "appTitle": {
+    "short": "BELTRANS",
+    "mobile": "BELTRANS",
+    "long": "&nbsp; &nbsp; BELTRANS database &nbsp; &nbsp;",
+    "subheading": "\"Intra-Belgian Book Translations 1970-2020\""
+  },
+  "appDescription1": "Sampo is a web service for searching and studying place names. The search results can be viewed as a table, on maps, and as statistical distributions. Historical and current background maps are provided.",
+  "appDescription2": "Start by choosing source dataset(s) and input a place name on the search field. Alternatively you can search by area.",
+  "selectPerspective": "Select a perspective to search and browse the corpus:",
+  "mainPageImageLicence": "Images used under license from Shutterstock.com, cover image © Brecht Evens: De bondgenoten / Le Roi Méduse (Oogachtend / Actes Sud, 2024)",
+  "backendErrorText": "One of the backend services is not available at the moment. Please try again later.",
+  "infoHeader": {
+    "toggleInstructions": "Click to show or hide instructions"
+  },
+  "topBar": {
+    "feedback": "feedback",
+    "info": {
+      "info": "Info",
+      "blog": "About the BELTRANS research project",
+      "blogUrl": "https://www.kbr.be/en/projects/beltrans/",
+      "aboutThePortal": "About the BELTRANS database"
+    },
+    "searchBarPlaceHolder": "Search all content",
+    "searchBarPlaceHolderShort": "Search",
+    "instructions": "instructions"
+  },
+  "facetBar": {
+    "results": "Results",
+    "filters": "Filters",
+    "activeFilters": "Active filters:",
+    "removeAllFilters": "Remove all",
+    "narrowDownBy": "Narrow down by",
+    "filterOptions": "Filter options",
+    "filterByName": "Filter by name",
+    "filterByBoundingBox": "Filter by bounding box",
+    "selectionOptions": "Selection options",
+    "selectAlsoSubconcepts": "Automatically select all subconcepts",
+    "doNotSelectSubconcepts": "Do not select subconcepts",
+    "sortingOptions": "Sorting options",
+    "sortAlphabetically": "Sort alphabetically",
+    "sortByNumberOfSearchResults": "Sort by number of search results",
+    "useDisjunction": "Use logical OR between selections",
+    "useConjuction": "Use logical AND between selections",
+    "minYear": "Min year",
+    "maxYear": "Max year",
+    "min": "Min",
+    "max": "Max",
+    "facetSearchFieldPlaceholder": "Search...",
+    "applyFacetSelection": "apply",
+    "pieChart": {
+      "tooltip": "Pie chart"
+    },
+    "barChart": {
+      "tooltip": "Bar chart",
+      "language": {
+        "title": "Language",
+        "xaxisTitle": "Language",
+        "yaxisTitle": "Manuscript count",
+        "seriesTitle": "Manuscript count"
+      }
+    },
+    "lineChart": {
+      "tooltip": "Line chart",
+      "productionTimespan": {
+        "title": "Manuscript production by decade",
+        "xaxisTitle": "Decade",
+        "yaxisTitle": "Manuscript count",
+        "seriesTitle": "Manuscript count"
+      }
+    }
+  },
+  "tabs": {
+    "table": "table",
+    "map": "Publication Place",
+    "production_places": "production places",
+    "production_places_heatmap": "production heatmap",
+    "last_known_locations": "last known locations",
+    "sourceTargetMap": "Source-Target Map",
+    "network": "network",
+    "export": "export",
+    "production_dates": "production dates",
+    "event_dates": "event dates",
+    "map_clusters": "clustered map",
+    "map_markers": "map",
+    "heatmap": "heatmap",
+    "statistics": "statistics",
+    "emloLetterNetwork": "Network of letters",
+    "emloSentReceived": "Sent and received letters",
+    "download": "download",
+    "recommendations": "recommendations",
+    "share": "share"
+  },
+  "table": {
+    "rowsPerPage": "Rows per page",
+    "of": "of"
+  },
+  "csvDownload": {
+    "translations": "Download CSV (UTF-8 encoding, delmiter ','). Licence: CC By 4.0. BELTRANS project (more info and link to full data in SODHA)"
+  },
+  "lineChart": {
+    "productionCount": "Production",
+    "transferCount": "Transfer of custody",
+    "observationCount": "Observation",
+    "sentCount": "Sent",
+    "receivedCount": "Received",
+    "allCount": "All"
+  },
+  "exportToYasgui": "open the result table query in yasgui sparql editor",
+  "openInLinkedDataBrowser": "open in linked data browser",
+  "resultsAsCSV": "download the search results as a CSV table",
+  "facets": {
+    "dateFacet": {
+      "invalidDate": "Epäkelpo päivämäärä.",
+      "toBeforeFrom": "Alkupäivämäärän täytyy olla ennen loppupäivämäärää.",
+      "minDate": "Aikaisin sallittu päivämäärä on {minDate}",
+      "maxDate": "Myöhäisin sallittu päivämäärä on {maxDate}",
+      "cancel": "Peruuta",
+      "fromLabel": "Alku",
+      "toLabel": "Loppu"
+    },
+    "textFacet": {
+      "inputLabel": "Etsi nimellä"
+    },
+    "sliderFacet": {
+      "invalidStartOrEnd": "Min value must be smaller than max value. The smallest value can be {min} and the largest value can be {max}."
+    }
+  },
+  "leafletMap": {
+    "basemaps": {
+      "mapbox": {
+        "light-v10": "Mapbox Light (OpenStreetMap)"
+      },
+      "googleRoadmap": "Google Maps",
+      "topographicalMapNLS": "Topographical map (National Land Survey of Finland)",
+      "backgroundMapNLS": "Background map (National Land Survey of Finland)",
+      "airMapNLS": "Aerial map (National Land Survey of Finland)"
+    },
+    "externalLayers": {
+      "WFS_MV_Kulttuuriymparisto:Arkeologiset_kohteet_alue": "Register of Archaeological Sites, areas (Finnish Heritage Agency)",
+      "WFS_MV_Kulttuuriymparisto:Arkeologiset_kohteet_piste": "Register of Archaeological Sites, points (Finnish Heritage Agency)",
+      "WFS_MV_KulttuuriymparistoSuojellut:Muinaisjaannokset_alue": "Register of Archaeological Sites, areas (Finnish Heritage Agency)",
+      "WFS_MV_KulttuuriymparistoSuojellut:Muinaisjaannokset_piste": "Register of Archaeological Sites, points (Finnish Heritage Agency)",
+      "fhaLidar": "Elevation model (Finnish Heritage Agency)",
+      "karelianMaps": "Karelian maps, 1:100 000 topographic (SeCo)",
+      "senateAtlas": "Senate atlas, 1:21 000 topographic (SeCo)",
+      "kotus:pitajat": "Finnish parishes in 1938 (Institute for the Languages of Finland)",
+      "kotus:rajat-sms-alueet": "Dialectical regions in Finland (Institute for the Languages of Finland)",
+      "kotus:rajat-sms-alueosat": "Dialectical subregions in Finland (Institute for the Languages of Finland)",
+      "kotus:rajat-lansi-ita": "Border between western and eastern dialects in Finland (Institute for the Languages of Finland)"
+    },
+    "mapModeButtons": {
+      "markers": "Markers",
+      "heatmap": "Heatmap"
+    },
+    "wrongZoomLevel": "The map zoom level has to at least 11",
+    "wrongZoomLevelFHA": "The map zoom level has to be at least 13 in order to show this layer",
+    "tooManyResults": "More than 500 results, please use clustered map or heatmap"
+  },
+  "instancePageGeneral": {
+    "introduction": "<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> This landing page provides a human-readable summary of the data points that link to this {entity}. The data included in this summary reflect only those data points used in the MMM Portal. Click the Open in Linked Data Browser on button on the Export tab to view the complete set of classes and properties linked to this record. </p> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> To cite this record, use its url. You can use also use the url to return directly to the record at any time. </p>",
+    "repetition": "<h6 class=\"MuiTypography-root MuiTypography-h6\"> Repetition of data </h6> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> The same or similar data may appear within a single data field multiple times. This repetition occurs due to the merging of multiple records from different datasets to create the MMM record. </p>"
+  },
+  "deckGlMap": {
+    "arcColouring": "Arc colouring:",
+    "showMoreInformation": "Click to show more information.",
+    "placesMsMigrations": {
+      "legendTitle": "Arc colouring",
+      "legendFrom": "Manuscript production place",
+      "legendTo": "Last known location",
+      "from": "Production place:",
+      "to": "Last known location:",
+      "count": "Manuscript count",
+      "listHeadingSingleInstance": "Manuscript:",
+      "listHeadingMultipleInstances": "Manuscripts:"
+    }
+  },
+  "perspectives": {
+    "fullTextSearch": {
+      "properties": {
+        "prefLabel": {
+          "label": "Label"
+        },
+        "type": {
+          "label": "Type"
+        },
+        "note": {
+          "label": "Note"
+        }
+      }
+    },
+    "persons": {
+      "label": "Authors",
+      "facetResultsType": "authors",
+      "shortDescription": "Authors, illustrators, editors and translators involved in book translations",
+      "longDescription": "<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> Use this perspective to access data related to authors, illustrators, editors and translators involved in book translations. See <a href=\"/instructions\">instructions</a> for using the filters. The result view can be selected using the tabs: </p> <ul class=\"MuiTypography-root MuiTypography-body1\"> <li> <strong>TABLE</STRONG> view includes all book translations. One table row is equivalent to one translation. </li> <li> <strong>MAP</STRONG> view visualizes the connection between translations and the places where they were published. </li> <li> <strong>EXPORT</strong> the SPARQL query used to generate the result table view. </li> </ul>",
+      "instancePage": {
+        "label": "Authors",
+        "description": "<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\">Authors, illustrators, editors and translators involved in book translations</p>"
+      },
+      "properties": {
+        "uri": {
+          "label": "URI",
+          "description": "Uniform Resource Identifier"
+        },
+        "prefLabel": {
+          "label": "Label",
+          "description": "The name of the person",
+          "textFacetInputPlaceholder": "Search..."
+        },
+        "familyName": {
+          "label": "Family Name",
+          "description": "The family name of the person"
+        },
+        "givenName": {
+          "label": "Given Name",
+          "description": "The given name of the person"
+        },
+        "gender": {
+          "label": "Gender",
+          "description": "The gender of the person"
+        },
+        "nationality": {
+          "label": "Nationality",
+          "description": "The nationality of the person (necessary to determine if a translation is in scope of BELTRANS)"
+        },
+        "isni": {
+          "label": "ISNI",
+          "description": "The International Standard name Identifier"
+        },
+        "kbr": {
+          "label": "KBR",
+          "description": "The KBR authority identifier"
+        },
+
+        "birthDate": {
+          "label": "Birth Date",
+          "description": "The date of birth of the person"
+        },
+        "deathDate": {
+          "label": "Death Date",
+          "description": "The date of death of the person"
+        },
+        "authorOf": {
+          "label": "author of",
+          "description": "A translation where this person contributed as author (MARC21 relator code 'author')"
+        },
+        "translatorOf": {
+          "label": "translator of",
+          "description": "A translation where this person contributed as translator (MARC21 relator code 'translator')"
+        },
+       "illustratorOf": {
+          "label": "illustrator of",
+          "description": "A translation where this person contributed as illustrator (MARC21 relator code 'illustrator')"
+        },
+        "publishingDirectorOf": {
+          "label": "publishing director of",
+          "description": "A translation where this person contributed as publishing director (MARC21 relator code 'publishing director')"
+        },
+        "numberContributions": {
+          "label": "number of contributions",
+          "description": "The number of translations in which this person contributed in any of the following roles: author, translator, illustrator or editor"
+        }
+      }
+    },
+    "organizations": {
+      "label": "Publishers",
+      "facetResultsType": "publishers",
+      "shortDescription": "Publishers and other organisations (e.g. translation agencies) involved in book translation",
+      "longDescription": "<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> Use this perspective to access data related to physical manuscript objects. If two or more source datasets include the same manuscript and this has been verified, the information from the source datasets has been merged into one manuscript. See <a href=\"/instructions\">instructions</a> for using the filters. The result view can be selected using the tabs: </p> <ul class=\"MuiTypography-root MuiTypography-body1\"> <li> <strong>TABLE</STRONG> view includes all manuscripts in the MMM data. One table row is equivalent to one manuscript. </li> <li> <strong>PRODUCTION PLACES</STRONG> view visualizes the connection between manuscripts and the places where they were produced. </li> <li> <strong>MIGRATIONS</strong> view visualizes the migration of a manuscript from place of production to its most recently observed location. </li> <li> <strong>EXPORT</strong> the SPARQL query used to generate the result table view into YASGUI query editor. </li> </ul>",
+      "instancePage": {
+        "label": "Organization contributors",
+        "description": "<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> MMM’s Manuscript entity corresponds to <a href='https://www.ifla.org/publications/node/11240' target='_blank' rel='noopener noreferrer'>FRBRoo’s</a> Manifestation Singleton, defined as \"physical objects that each carry an instance of [an Expression], and that were produced as unique objects...\" The various types of records that describe manuscripts in each of the three contributing MMM datasets have been mapped to this entity. </p> <h6 class=\"MuiTypography-root MuiTypography-h6\"> Manuscript labels </h6> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> If the Bibale or Oxford databases reference a shelf mark for the manuscript, that information will appear as its label. Otherwise, an SDBM ID number will serve as its label. SDBM ID numbers contain prefixes that indicate different things about the type of record they contain: </p> <ul class=\"MuiTypography-root MuiTypography-body1\"> <li> SDBM_MS: SDBM Manuscript Record, which aggregates the data of two or more SDBM Entries. Each Entry represents a different observation of a manuscript at a different point in time, derived from various sources. </li> <li> SDBM_MS_orphan: a single Entry in the SDBM, meaning it has not been linked to any other Entries and therefore has no SDBM Manuscript Record. </li> <li> SDBM_MS_part: a record identified as a fragment of a larger manuscript. </li> </ul> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"></p>"
+      },
+      "properties": {
+        "uri": {
+          "label": "URI",
+          "description": "Uniform Resource Identifier"
+        },
+        "prefLabel": {
+          "label": "Label",
+          "description": "The name of the person",
+          "textFacetInputPlaceholder": "Search..."
+        },
+        "isni": {
+          "label": "ISNI",
+          "description": "The International Standard Name Identifier"
+        },
+        "kbr": {
+          "label": "KBR",
+          "description": "The KBR authority identifier"
+        },
+        "location": {
+          "label": "Location",
+          "description": "The place where the organisation has its registered office"
+        },
+        "region": {
+          "label": "Region",
+          "description": "The specific region code of the location"
+        },
+        "country": {
+          "label": "Country",
+          "description": "The country where the location is located"
+        }
+      }
+    },
+
+    "translations": {
+      "label": "Translations",
+      "facetResultsType": "translations",
+      "shortDescription": "Translations of the BELTRANS corpus",
+      "longDescription": "<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> Use this perspective to access data related to translations of the BELTRANS corpus. The MMM data model follows the <a href='https://www.ifla.org/publications/node/11240' target='_blank' rel='noopener noreferrer'>FRBRoo</a> definition of a work, which refers to “distinct concepts or combinations of concepts identified in artistic and intellectual expressions.” Works contain title and author information. If two or more source datasets include the same Work and this has been verified, the information from the source datasets has been merged into one Work. See <a href=\"/instructions\">instructions</a> for using the filters. The result view can be selected using the tabs: </p> <ul class=\"MuiTypography-root MuiTypography-body1\"> <li> <strong>TABLE</STRONG> view gives you a list of specific works, and the manuscripts and manuscript collections in which they can be found. </li> <li> <strong>EXPORT</strong> the SPARQL query used to generate the result table view into YASGUI query editor. </li> </ul>",
+      "instancePage": {
+        "label": "Translation",
+        "description": "<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> The MMM data model follows the <a href='https://www.ifla.org/publications/node/11240' target='_blank' rel='noopener noreferrer'>FRBRoo</a> definition of a work, which refers to “distinct concepts or combinations of concepts identified in artistic and intellectual expressions.” Works contain title and author information. This definition is not shared by the Bibale or Oxford Libraries’ conception of the term, which both define their internal “work” concept more closely to the FRBRoo conception of an Expression. The SDBM does not have a work concept at all, recording only the titles of the texts as given in its various sources, without normalizing that data or linking it directly to author information. Works were generated within the MMM dataset by manually creating links across the three datasets’ various conceptions of the relationship between authors and their creations. This process was not able to reconcile every work contained within the combined dataset. </p>"
+      },
+      "properties": {
+        "uri": {
+          "label": "URI",
+          "description": "Uniform Resource Identifier"
+        },
+        "prefLabel": {
+          "label": "Title",
+          "description": "The name or title of the translated book",
+          "textFacetInputPlaceholder": "Search..."
+        },
+        "targetYearOfPublication": {
+          "label": "Year translation",
+          "description": "The year in which the translation was published"
+        },
+        "sourceLang": {
+          "label": "Language(s) source",
+          "description": "The language(s) of the source title(s)"
+        },
+        "targetLang": {
+          "label": "Language(s) translation",
+          "description": "The language(s) of the translated titles"
+        },
+        "isbn13": {
+          "label": "ISBN translation",
+          "description": "The 13-digit International Standard Book Number of the translation"
+        },
+        "author": {
+          "label": "author",
+          "description": "The author(s) associated with the translation, based on the MARC relator term 'author' or 'scenarist'"
+        },
+        "translator": {
+          "label": "translator",
+          "description": "The translator(s) associated with the translation, based on the MARC relator term 'translator' or 'adapter'"
+        },
+        "illustrator": {
+          "label": "illustrator",
+          "description": "The illustrator(s) associated with the translation, based on the MARC relator term 'illustrator'"
+        },
+        "editor": {
+          "label": "editor",
+          "description": "The editor(s) associated with the translation, based on the MARC relator term 'publishing director'"
+        },
+        "targetPublisher": {
+          "label": "targetPublisher",
+          "description": "The publisher associated with the translation, based on the MARC relator term 'publisher'"
+        },
+        "original": {
+          "label": "Source title",
+          "description": "The source title of this translation"
+        },
+        "sourcePublisher": {
+          "label": "sourcePublisher",
+          "description": "The publisher associated with the source of the translation, based on the MARC relator term 'publisher' of the linked source"
+        },
+        "genre": {
+          "label": "genre",
+          "description": "The genre of the translation according to the Belgian Bibliography"
+        },
+        "femaleAuthor": {
+          "label": "Female Author",
+          "description": "At least one of the authors is female (based on the MARC relator terms 'author' and 'scenarist')"
+        },
+        "femaleTranslator": {
+          "label": "Female Translator",
+          "description": "At least one of the translators is female (based on the MARC relator terms 'translator' and 'adapter')"
+        },                                                                                                                                                     "femaleIllustrator": {
+          "label": "Female illustrator",
+          "description": "At least one of the editors is female (based on the MARC relator term 'illustrator')"
+        },                                                                                                                                                     "femaleEditor": {
+          "label": "Female editor",
+          "description": "At least one of the editors is female (based on the MARC relator term 'publishing director')"
+        },
+        "kbrIdentifier": {
+          "label": "Provenance KBR",
+          "description": "Information from this record of the Royal Library of Belgium (KBR) was used to curate this record."
+        },
+        "bnfIdentifier": {
+          "label": "Provenance BnF",
+          "description": "Information from this record of the National Library of France (BnF) was used to curate this record."
+        },
+        "kbIdentifier": {
+          "label": "Provenance KB",
+          "description": "Information from this record of the Royal Library of the Netherlands (KB) was used to curate this record."
+        },
+        "unescoIdentifier": {
+          "label": "Provenance Unesco",
+          "description": "Information from the online database Unesco Index Translationum was used to curate this record. This database does not contain identifiers, hence we cannot link to the record."
+        }
+
+
+      }
+    },
+    "originals": {
+      "label": "Source titles",
+      "facetResultsType": "originals",
+      "shortDescription": "Source titles of the BELTRANS corpus",
+      "longDescription": "<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> Use this perspective to access data related to source titles. See <a href=\"/instructions\">instructions</a> for using the filters. The result view can be selected using the tabs: </p> <ul class=\"MuiTypography-root MuiTypography-body1\"> <li> <strong>TABLE</STRONG> view gives you a list of source titles. </li> <li> <strong>EXPORT</strong> the SPARQL query used to generate the result table view. </li> </ul>",
+      "instancePage": {
+        "label": "Source title",
+        "description": "<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\">Source title of the BELTRANS corpus</p>"
+      },
+      "properties": {
+        "uri": {
+          "label": "URI",
+          "description": "Uniform Resource Identifier"
+        },
+        "prefLabel": {
+          "label": "Title source",
+          "description": "The title of the source publication",
+          "textFacetInputPlaceholder": "Search..."
+        },
+        "targetYearOfPublication": {
+          "label": "Year source",
+          "description": "The year in which the source title was published"
+        },
+        "sourceLang": {
+          "label": "Language(s) source",
+          "description": "The source language or language from which the book was translated"
+        },
+        "targetLang": {
+          "label": "Language(s) translation",
+          "description": "The target language or language into which the book was translated"
+        },
+        "isbn13": {
+          "label": "ISBN source",
+          "description": "The 13-digit International Standard Book Number of the source title"
+        },
+        "author": {
+          "label": "Author",
+          "description": "The author(s) associated with the source title, based on the MARC relator term 'author' or 'scenarist'"
+        },
+        "translator": {
+          "label": "Translator",
+          "description": "The translator(s) associated with the source title, based on the MARC relator term 'translator'"
+        },
+        "illustrator": {
+          "label": "Illustrator",
+          "description": "The illustrator(s) associated with the source title, based on the MARC relator term 'illustrator'"
+        },
+       "publishingDirector": {
+          "label": "Editor",
+          "description": "The editor(s) associated with the source title, based on the MARC relator term 'publishing director'"
+        },
+        "targetPublisher": {
+          "label": "targetPublisher",
+          "description": "The publisher associated with the source title, based on the MARC relator term 'publisher'"
+        },
+        "translation": {
+          "label": "Translation",
+          "description": "The translation(s) of this source title"
+        },
+        "sourcePublisher": {
+          "label": "sourcePublisher",
+          "description": "The publisher associated with this source title, based on the MARC relator term 'publisher' of the linked source"
+        },
+        "genre": {
+          "label": "genre",
+          "description": "The genre of this source title according to the Belgian Bibliography"
+        }
+      }
+    }
+  },        
+  "aboutThePortalPartOne": "<h1 class=\"MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom\"> About the Portal </h1> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\">The BELTRANS database gathers information on book translations in Dutch and French from Belgian authors, illustrators or editors, published anywhere in the world in the period 1970-2020 and covering any domain, with a special focus on four literary genres, namely poetry, novels, children’s literature and comics, as well as on history books. </p> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> The database contains not only bibliographic information on translations and its source titles but also information on actors (both persons and organisations) who contributed to book translations, in their roles as authors, illustrators, editors, translators or publishers.</p> <h2 class=\"MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom\"> Data </h2> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> Nog aan te vullen </p>",
+  "aboutThePortalPartTwo": "<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> Nog aan te vullen </p> <h2 class=\"MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom\"> Data Reuse </h2> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> Nog aan te vullen met gebruiksvoorwaarden (CC BY) + how to cite? </p> <h2 class=\"MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom\"> More Information </h2> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> Nog aan te vullen</p>",
+  "instructions": "<h1 class=\"MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom\"> Instructions </h1> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> The search functionality of this semantic portal is based on the <a href=\"https://doi.org/10.2200/S00190ED1V01Y200904ICR005\" target='_blank' rel='noopener noreferrer'> faceted search</a> paradigm. By default each perspective displays all results from the corresponding class. This default result set can be narrowed down by using the filters on the left. </p> <h2 class=\"MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom\"> Using a single filter </h2> <h3 class=\"MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom\"> Selecting values within a filter </h3> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> All possible values for a filter are displayed either as a list or as a hierarchical tree structure (if available). The number of results is shown in brackets for each value. Once a value is selected, the results are automatically updated. To prevent further selections that do not return any results, also the possible values for all other filters are updated at the same time. </p> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> Multiple values can be selected within a single filter. Selecting multiple values generates results that contain any of the selected values. For example, selecting both <i>Saint Augustine</i> and <i>Saint Jerome</i> as an Author returns results that include either <i>Saint Augustine</i> <strong>OR</strong> <i>Saint Jerome</i> as an Author. </p> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> Selected values of a filter appear in the Active filters section at the top of the list of filters. To deselect a filter, click the X mark next to it within the Active filters section. You can also deselect a filter value by unchecking the checkmark in the filter’s value list. The Active filters section only appears if there are filter values currently selected. </p> <h3 class=\"MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom\"> Searching within a filter </h3> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> Search within a filter by using the search field at the top of each filter. All possible values of a filter remain visible at all times. The values of the filter that match the search term are indicated by a purple underline. </p> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> Steps for searching within filters: </p> <ol class=\"MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom\"> <li> Type search term into search field. If there are matches, a number will appear to the right of the search field, indicating the number of filter values that match the search term. </li> <li> Click the arrows to the right of the search field to cycle through the results. As you click the arrow, a different filter value will appear at the top of the list. Matched filters are underlined in purple. </li> <li> Click the checkmark next to a filter value to activate it. The results (and also other filters) are automatically updated. </li> </ol> <h2 class=\"MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom\"> Using multiple filters simultaneously </h2> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> The effectiveness of faceted search is realized when multiple filters are applied at the same time. As in many e-commerce sites, a logical AND is always used between the filters. For example selecting <i>Saint Augustine </i> and <i>Saint Jerome</i> as an Author and <i>Sir Thomas Phillipps</i> and <i> Thomas Thorpe</i> as an Owner, the results are narrowed down as follows: </p> <p class=\"MuiTypography-root MuiTypography-body1\"> (Author: <i>Saint Augustine</i> <strong>OR</strong> Author: <i>Saint Jerome</i>) </p> <p class=\"MuiTypography-root MuiTypography-body1\"> <strong>AND</strong> </p> <p class=\"MuiTypography-root MuiTypography-body1\"> (Owner: <i>Sir Thomas Phillipps</i> <strong>OR</strong> Owner: <i>Thomas Thorpe</i>) </p>",
+  "feedback": "<h1 class=\"MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom\"> Feedback </h1> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> This semantic portal has been developed by the BELTRANS team from KBR, KU Leuven and UCLouvain.</p> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> We are interested in your feedback on the functionality, coverage, and usefulness of this portal and its data. </p> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> Please complete our <a href=\"\" target='_blank' rel='noopener noreferrer'>Feedback Survey Form (add link).</a> </p> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> You can also contact us via email: beltrans@kbr.be</p> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> Please be aware that this portal’s response times may be affected by the size and complexity of the underlying knowledge graph. </p>",
+  "exportLink": {
+    "viewLabel": "Tab",
+    "viewInstructions": "Choose the tab in which the query will open",
+    "fieldLabel": "Generated link (read-only)",
+    "infoBody": "You can share the query you made by using the link below. The link is generated based on what you have selected for different facets and will open the search view of this perpsective with those choices on the selected tab. You can change the opened tab to any of the supported ones using the dropdown menu below. If you make additional choices while on this page, the link will be automatically updated to include those.",
+    "warningTitle": "Generated link might be too long for some browsers",
+    "warningBody": "The current length of the generated link is more than 2,000 characters. Browsers have different limits for the maximum lengths of links they can handle. <strong>This link might not work on all browsers</strong> — you can reduce the length of the link by deselecting some facet options.",
+    "errorTitle": "Generated link is too long",
+    "errorBody": "The current length of the generated link is more than 15,800 characters. <strong>The server will refuse to handle requests that go over certain length limits</strong> — you can reduce the length of the link by deselecting some facet options.",
+    "copyLinkToClipboard": "Copy link to clipboard"
+  }
+}

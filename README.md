@@ -1,2 +1,3 @@
-# beltrans-ui-config
-The SAMPO-UI configuration for the BELTRANS portal
+# BELTRANS UI
+
+This is the SAMPO-UI configuration for the BELTRANS portal.

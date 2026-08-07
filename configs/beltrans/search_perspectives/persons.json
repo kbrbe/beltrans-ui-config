@@ -1,0 +1,278 @@
+{
+    "id": "persons",
+    "endpoint": {
+        "url": "http://ql-beltrans-dev-srv01:8001",
+        "useAuth": false,
+        "prefixesFile": "SparqlQueriesPrefixes.js"
+    },
+    "sparqlQueriesFile": "persons.js",
+    "baseURI": "http://kbr.be/id/data",
+    "URITemplate": "<BASE_URI>/<LOCAL_ID>",
+    "facetClass": "schema:Person",
+    "frontPageImage": "main_page/Authors.jpg",
+    "searchMode": "faceted-search",
+    "enableDynamicLanguageChange": false,
+    "defaultActiveFacets": [
+      "prefLabel"
+    ],
+    "defaultTab": "table",
+    "defaultInstancePageTab": "table",
+    "includeInSitemap": true,
+    "resultClasses": {
+        "persons": {
+            "paginatedResultsConfig": {
+                "tabID": 0,
+                "component": "ResultTable",
+                "tabPath": "table",
+                "tabIcon": "CalendarViewDay",
+                "propertiesQueryBlock": "personProperties",
+                "paginatedResultsAlwaysExpandRows": false,
+                "paginatedResultsRowContentMaxHeight": 190,
+                "pagesize": 50,
+                "sortBy": null,
+                "sortDirection": null
+            },
+            "instanceConfig": {
+                "propertiesQueryBlock": "personProperties",
+                "instancePageResultClasses": {
+                    "instancePageTable": {
+                        "tabID": 0,
+                        "component": "InstancePageTable",
+                        "tabPath": "table",
+                        "tabIcon": "CalendarViewDay"
+                    },
+                    "instancePageExport": {
+                        "tabID": 1,
+                        "component": "Export",
+                        "tabPath": "export",
+                        "tabIcon": "CloudDownload",
+                        "pageType": "instancePage"
+                    }
+                }
+            }
+        },
+        "export": {
+            "tabID": 8,
+            "component": "Export",
+            "tabPath": "export",
+            "tabIcon": "CloudDownload",
+            "resultClass": "persons",
+            "facetClass": "persons"
+        },
+        "jenaText": {
+            "propertiesQueryBlock": "fullTextSearchProperties"
+        }
+    },
+    "properties": [
+        {
+            "id": "uri",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": true,
+            "sortValues": true,
+            "numberedList": false,
+            "onlyOnInstancePage": true
+        },
+        {
+            "id": "prefLabel",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 200
+        },
+        {
+            "id": "isni",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": true,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 20
+        },
+        {
+            "id": "kbr",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": true,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 20
+        },
+        {
+            "id": "familyName",
+            "valueType": "string",
+            "makeLink": false,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 150
+        },
+        {
+            "id": "givenName",
+            "valueType": "string",
+            "makeLink": false,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 200,
+            "collapsedMaxWords": 3,
+            "priority": 5
+        },
+        {
+            "id": "birthDate",
+            "valueType": "string",
+            "makeLink": false,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 15,
+            "collapsedMaxWords": 3,
+            "priority": 5
+        },
+        {
+            "id": "deathDate",
+            "valueType": "string",
+            "makeLink": false,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "showSource": true,
+            "sourceExternalLink": true,
+            "minWidth": 15
+        },
+        {
+            "id": "gender",
+            "valueType": "object",
+            "makeLink": false,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "showSource": true,
+            "sourceExternalLink": true,
+            "minWidth": 10
+        },
+        {
+            "id": "nationality",
+            "valueType": "object",
+            "makeLink": false,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "showSource": true,
+            "sourceExternalLink": true,
+            "minWidth": 10
+        },
+        {
+            "id": "authorOf",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "showSource": true,
+            "minWidth": 10,
+            "onlyOnInstancePage": true
+        },
+        {
+            "id": "translatorOf",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "showSource": true,
+            "minWidth": 10,
+            "onlyOnInstancePage": true
+        },
+        {
+            "id": "scenaristOf",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "showSource": true,
+            "minWidth": 10,
+            "onlyOnInstancePage": true
+        },
+        {
+            "id": "illustratorOf",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "showSource": true,
+            "minWidth": 10,
+            "onlyOnInstancePage": true
+        },
+        {
+            "id": "publishingDirectorOf",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "showSource": true,
+            "minWidth": 10,
+            "onlyOnInstancePage": true
+        },
+        {
+            "id": "numberContributions",
+            "valueType": "string",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "showSource": true,
+            "minWidth": 10
+        }
+    ],
+    "facets": {
+        "prefLabel": {
+            "sortByPredicate": "schema:name"
+        },
+        "nationality": {
+            "containerClass": "five",
+            "facetType": "list",
+            "filterType": "uriFilter",
+            "facetLabelPredicate": "skos:prefLabel",
+            "predicate": "schema:nationality",
+            "facetLabelFilter": "FILTER(LANG(?prefLabel_) = 'en')",
+            "sortByPredicate": "schema:nationality/skos:prefLabel",
+            "searchField": true,
+            "sortButton": true,
+            "sortBy": "instanceCount",
+            "sortDirection": "desc",
+            "pieChartButton": true
+        },
+        "gender": {
+            "containerClass": "five",
+            "facetType": "list",
+            "filterType": "uriFilter",
+            "predicate": "schema:gender",
+            "facetLabelPredicate": "rdfs:label",
+            "facetLabelFilter": "FILTER(LANG(?prefLabel_) = 'en')",
+            "sortByPredicate": "schema:gender/rdfs:label",
+            "searchField": true,
+            "sortButton": true,
+            "sortBy": "instanceCount",
+            "sortDirection": "desc",
+            "pieChartButton": true
+        },
+        "birthDate": {
+            "containerClass": "five",
+            "facetType": "timespan",
+            "filterType": "dateFilter",
+            "predicate": "schema:birthDate"
+        },
+        "deathDate": {
+            "containerClass": "five",
+            "facetType": "timespan",
+            "filterType": "dateFilter",
+            "predicate": "schema:deathDate"
+        }
+    }
+}

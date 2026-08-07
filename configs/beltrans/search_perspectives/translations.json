@@ -1,0 +1,498 @@
+{
+    "id": "translations",
+    "endpoint": {
+        "url": "http://ql-beltrans-dev-srv01:8001",
+        "useAuth": false,
+        "prefixesFile": "SparqlQueriesPrefixes.js"
+    },
+    "sparqlQueriesFile": "translations.js",
+    "baseURI": "http://kbr.be/id/data",
+    "URITemplate": "<BASE_URI>/<LOCAL_ID>",
+    "facetClass": "btm:BeltransGenreTranslation",
+    "frontPageImage": "main_page/Translations.jpg",
+    "searchMode": "faceted-search",
+    "enableDynamicLanguageChange": false,
+    "defaultActiveFacets": [
+        "prefLabel"
+    ],
+    "defaultTab": "table",
+    "defaultInstancePageTab": "table",
+    "resultClasses": {
+        "translations": {
+            "paginatedResultsConfig": {
+                "tabID": 0,
+                "component": "ResultTable",
+                "tabPath": "table",
+                "tabIcon": "CalendarViewDay",
+                "propertiesQueryBlock": "manifestationProperties",
+                "pagesize": 10,
+                "sortBy": null,
+                "sortDirection": null
+            },
+            "instanceConfig": {
+                "propertiesQueryBlock": "manifestationProperties",
+                "instancePageResultClasses": {
+                    "instancePageTable": {
+                        "tabID": 0,
+                        "component": "InstancePageTable",
+                        "tabPath": "table",
+                        "tabIcon": "CalendarViewDay"
+                    },
+                    "instancePageExport": {
+                        "tabID": 1,
+                        "component": "Export",
+                        "tabPath": "export",
+                        "tabIcon": "CloudDownload",
+                        "pageType": "instancePage"
+                    }
+                }
+            }
+        },
+        "targetPublicationPlace": {
+            "tabID": 2,
+            "tabPath": "map",
+            "tabIcon": "AddLocation",
+            "component": "LeafletMap",
+            "showInstanceCountInClusters": true,
+            "showExternalLayers": false,
+            "customMapControl": true,
+            "sparqlQuery": "targetPublicationPlaces",
+            "filterTarget": "id",
+            "facetClass": "translations",
+            "resultMapper": "mapPlaces",
+            "instanceConfig": {
+                "propertiesQueryBlock": "manifestationProperties",
+                "createPopUpContent": "createPopUpContentDefault"
+            }
+        },
+        "sourceTargetMap": {
+            "tabID": 3,
+            "component": "Deck",
+            "tabPath": "sourceTargetMap",
+            "tabIcon": "Redo",
+            "sparqlQuery": "sourceTargetMap",
+            "facetClass": "translations",
+            "filterTarget": "id",
+            "resultMapper": "makeObjectList",
+            "layerType": "arcLayer",
+            "arcWidthVariable": "instanceCountScaled",
+            "instanceVariable": "translation",
+            "showTooltips": false,
+            "postprocess": {
+                "func": "linearScale",
+                "config": {
+                    "variable": "instanceCount",
+                    "minAllowed": 2,
+                    "maxAllowed": 20
+                }
+            }
+
+        },
+        "export": {
+            "tabID": 8,
+            "tabPath": "export",
+            "tabIcon": "CloudDownload",
+            "component": "ExportCSV",
+            "facetClass": "translations",
+            "sparqlQuery": "manifestationsCSVQuery",
+            "filterTarget": "id"
+        },
+        "knowledgeGraphMetadata": {
+            "sparqlQuery": "knowledgeGraphMetadataQuery",
+            "resultMapper": "makeObjectList"
+        }
+    },
+    "maps": {
+      "targetPublicationPlace": {
+        "center": [
+          50.85045,
+          4.34878
+        ],
+        "zoom": 5
+      },
+      "sourceTargetMap": {
+        "center": [
+          50.85045,
+          4.34878
+        ],
+        "zoom": 4
+      }
+
+    },
+    "properties": [
+        {
+            "id": "uri",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": true,
+            "sortValues": true,
+            "numberedList": false,
+            "onlyOnInstancePage": true
+        }, 
+        {
+            "id": "prefLabel",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 250
+        },
+        {
+            "id": "genre",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 50
+        },
+        {
+            "id": "targetYearOfPublication",
+            "valueType": "string",
+            "makeLink": false,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 10
+        },
+        {
+            "id": "sourceLang",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 20
+        },
+        {
+            "id": "targetLang",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 20
+        },
+        {
+            "id": "isbn13",
+            "valueType": "string",
+            "makeLink": false,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 20
+        },
+        {
+            "id": "author",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 100
+        },
+        {
+            "id": "translator",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 50
+        },
+        {
+            "id": "illustrator",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 50
+        },
+        {
+            "id": "editor",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 50
+        },
+        {
+            "id": "targetPublisher",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 50
+        },
+        {
+            "id": "original",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 100
+        },
+        {
+            "id": "sourcePublisher",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 50
+        },
+        {
+            "id": "femaleAuthor",
+            "valueType": "object",
+            "makeLink": false,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 10
+        },
+        {
+            "id": "femaleTranslator",
+            "valueType": "object",
+            "makeLink": false,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 10
+        },
+        {
+            "id": "femaleIllustrator",
+            "valueType": "object",
+            "makeLink": false,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 10
+        },
+        {
+            "id": "femaleEditor",
+            "valueType": "object",
+            "makeLink": false,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 10
+        },
+        {
+            "id": "kbrIdentifier",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": true,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 10,
+            "onlyOnInstancePage": true
+        },
+        {
+            "id": "bnfIdentifier",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": true,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 10,
+            "onlyOnInstancePage": true
+        },
+        {
+            "id": "kbIdentifier",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": true,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 10,
+            "onlyOnInstancePage": true
+        },
+        {
+            "id": "unescoIdentifier",
+            "valueType": "string",
+            "makeLink": false,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 10,
+            "onlyOnInstancePage": true
+        }
+        
+    ],
+    "facets": {
+        "prefLabel": {
+            "sortByPredicate": "schema:name"
+        },
+        "targetLang": {
+          "containerClass": "four",
+          "facetType": "list",
+          "filterType": "uriFilter",
+          "facetLabelPredicate": "skos:prefLabel",
+          "facetLabelFilter": "FILTER(LANG(?prefLabel_) = 'en')",
+          "predicate": "btm:inLanguage",
+          "searchField": true,
+          "sortButton": true,
+          "sortBy": "instanceCount",
+          "sortByPredicate": "btm:inLanguage/skos:prefLabel",
+          "sortDirection": "desc"
+        },
+        "author": {
+          "containerClass": "ten",
+          "facetType": "list",
+          "filterType": "uriFilter",
+          "facetLabelPredicate": "schema:name",
+          "predicate": "schema:author|marcrel:sce",
+          "searchField": true,
+          "sortButton": true,
+          "sortBy": "instanceCount",
+          "sortByPredicate": "(schema:author|marcrel:sce)/schema:name",
+          "sortDirection": "desc"
+        },
+        "translator": {
+          "containerClass": "ten",
+          "facetType": "list",
+          "filterType": "uriFilter",
+          "facetLabelPredicate": "schema:name",
+          "predicate": "schema:translator|marcrel:adp",
+          "searchField": true,
+          "sortButton": true,
+          "sortBy": "instanceCount",
+          "sortByPredicate": "(schema:translator|marcrel:adp)/schema:name",
+          "sortDirection": "desc"
+        },
+        "illustrator": {
+          "containerClass": "ten",
+          "facetType": "list",
+          "filterType": "uriFilter",
+          "facetLabelPredicate": "schema:name",
+          "predicate": "marcrel:ill",
+          "searchField": true,
+          "sortButton": true,
+          "sortBy": "instanceCount",
+          "sortByPredicate": "marcrel:ill/schema:name",
+          "sortDirection": "desc"
+        },
+        "editor": {
+          "containerClass": "ten",
+          "facetType": "list",
+          "filterType": "uriFilter",
+          "facetLabelPredicate": "schema:name",
+          "predicate": "marcrel:pbd",
+          "searchField": true,
+          "sortButton": true,
+          "sortBy": "instanceCount",
+          "sortByPredicate": "marcrel:pbd/schema:name",
+          "sortDirection": "desc"
+        },
+        "targetPublisher": {
+          "containerClass": "ten",
+          "facetType": "list",
+          "filterType": "uriFilter",
+          "facetLabelPredicate": "schema:name",
+          "predicate": "marcrel:pbl",
+          "searchField": true,
+          "sortButton": true,
+          "sortBy": "instanceCount",
+          "sortByPredicate": "marcrel:pbl/schema:name",
+          "sortDirection": "desc"
+        },
+        "original": {
+          "containerClass": "ten",
+          "facetType": "list",
+          "filterType": "uriFilter",
+          "facetLabelPredicate": "schema:name",
+          "predicate": "schema:translationOfWork",
+          "searchField": true,
+          "sortButton": true,
+          "sortBy": "instanceCount",
+          "sortByPredicate": "schema:translationOfWork/schema:name",
+          "sortDirection": "desc"
+        },
+
+        "sourcePublisher": {
+          "containerClass": "ten",
+          "facetType": "list",
+          "filterType": "uriFilter",
+          "facetLabelPredicate": "schema:name",
+          "predicate": "schema:translationOfWork/marcrel:pbl",
+          "searchField": true,
+          "sortButton": true,
+          "sortBy": "instanceCount",
+          "sortByPredicate": "schema:translationOfWork/marcrel:pbl/schema:name",
+          "sortDirection": "desc"
+        },
+        "genre": {
+          "containerClass": "six",
+          "facetType": "list",
+          "filterType": "uriFilter",
+          "facetLabelFilter": "FILTER(LANG(?prefLabel_) = 'en')",
+          "predicate": "schema:about",
+          "searchField": true,
+          "sortButton": true,
+          "sortBy": "instanceCount",
+          "sortDirection": "desc",
+          "pieChartButton": true
+        },
+        "femaleAuthor": {
+          "containerClass": "four",
+          "facetType": "list",
+          "filterType": "uriFilter",
+          "facetLabelPredicate": "skos:prefLabel",
+          "facetLabelFilter": "FILTER(LANG(?prefLabel_) = 'en')",
+          "predicate": "btm:hasFemaleAuthor",
+          "searchField": true,
+          "sortButton": true,
+          "sortBy": "instanceCount",
+          "sortByPredicate": "btm:hasFemaleAuthor/skos:prefLabel",
+          "sortDirection": "desc",
+          "pieChartButton": true
+        },
+        "femaleTranslator": {
+          "containerClass": "four",
+          "facetType": "list",
+          "filterType": "uriFilter",
+          "facetLabelPredicate": "skos:prefLabel",
+          "facetLabelFilter": "FILTER(LANG(?prefLabel_) = 'en')",
+          "predicate": "btm:hasFemaleTranslator",
+          "searchField": true,
+          "sortButton": true,
+          "sortBy": "instanceCount",
+          "sortByPredicate": "btm:hasFemaleTranslator/skos:prefLabel",
+          "sortDirection": "desc",
+          "pieChartButton": true
+        },
+        "femaleIllustrator": {
+          "containerClass": "four",
+          "facetType": "list",
+          "filterType": "uriFilter",
+          "facetLabelPredicate": "skos:prefLabel",
+          "facetLabelFilter": "FILTER(LANG(?prefLabel_) = 'en')",
+          "predicate": "btm:hasFemaleIllustrator",
+          "searchField": true,
+          "sortButton": true,
+          "sortBy": "instanceCount",
+          "sortByPredicate": "btm:hasFemaleIllustrator/skos:prefLabel",
+          "sortDirection": "desc",
+          "pieChartButton": true
+        },
+        "femaleEditor": {
+          "containerClass": "four",
+          "facetType": "list",
+          "filterType": "uriFilter",
+          "facetLabelPredicate": "skos:prefLabel",
+          "facetLabelFilter": "FILTER(LANG(?prefLabel_) = 'en')",
+          "predicate": "btm:hasFemaleEditor",
+          "searchField": true,
+          "sortButton": true,
+          "sortBy": "instanceCount",
+          "sortByPredicate": "btm:hasFemaleEditor/skos:prefLabel",
+          "sortDirection": "desc",
+          "pieChartButton": true
+        }
+    }
+}

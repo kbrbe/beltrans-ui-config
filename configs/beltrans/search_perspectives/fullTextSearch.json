@@ -1,0 +1,25 @@
+{
+    "id": "fullTextSearch",
+    "endpoint": {
+        "url": "http://beltrans2.kbr.be/sparql/namespace/integration/sparql?default-graph-uri=http://beltrans-manifestations&default-graph-uri=http://beltrans-contributors&default-graph-uri=http://master-data&default-graph-uri=http://beltrans-originals&named-graph-uri=http://beltrans-manifestations&named-graph-uri=http://beltrans-contributors",
+        "useAuth": true,
+        "prefixesFile": "SparqlQueriesPrefixes.js"
+    },
+    "sparqlQueriesFile": "SparqlQueriesFullTextSearch.js",
+    "propertiesQueryBlock": "fullTextSearchProperties",
+    "hideCardOnFrontPage": true,
+    "hideTopPerspectiveButton": true,
+    "searchMode": "full-text-search",
+    "properties": [
+        {
+            "id": "prefLabel",
+            "valueType": "object",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": false,
+            "numberedList": false,
+            "minWidth": 400
+        }
+
+    ]
+}
