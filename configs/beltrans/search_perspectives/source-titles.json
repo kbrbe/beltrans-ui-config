@@ -1,11 +1,11 @@
 {
-    "id": "originals",
+    "id": "source-titles",
     "endpoint": {
         "url": "http://ql-beltrans-dev-srv01:8001",
         "useAuth": false,
         "prefixesFile": "SparqlQueriesPrefixes.js"
     },
-    "sparqlQueriesFile": "originals.js",
+    "sparqlQueriesFile": "source-titles.js",
     "baseURI": "http://kbr.be/id/data",
     "URITemplate": "<BASE_URI>/<LOCAL_ID>",
     "facetClass": "btm:BeltransOriginal",
@@ -18,19 +18,19 @@
     "defaultTab": "table",
     "defaultInstancePageTab": "table",
     "resultClasses": {
-        "originals": {
+        "source-titles": {
             "paginatedResultsConfig": {
                 "tabID": 0,
                 "component": "ResultTable",
                 "tabPath": "table",
                 "tabIcon": "CalendarViewDay",
-                "propertiesQueryBlock": "originalProperties",
+                "propertiesQueryBlock": "sourceTitleProperties",
                 "pagesize": 10,
                 "sortBy": null,
                 "sortDirection": null
             },
             "instanceConfig": {
-                "propertiesQueryBlock": "originalProperties",
+                "propertiesQueryBlock": "sourceTitleProperties",
                 "instancePageResultClasses": {
                     "instancePageTable": {
                         "tabID": 0,
@@ -53,8 +53,8 @@
             "component": "Export",
             "tabPath": "export",
             "tabIcon": "CloudDownload",
-            "resultClass": "originals",
-            "facetClass": "originals"
+            "resultClass": "source-titles",
+            "facetClass": "source-titles"
         },
         "knowledgeGraphMetadata": {
             "sparqlQuery": "knowledgeGraphMetadataQuery",

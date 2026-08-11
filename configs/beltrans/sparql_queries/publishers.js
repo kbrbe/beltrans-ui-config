@@ -1,6 +1,6 @@
-const perspectiveID = 'organizations'
+const perspectiveID = 'publishers'
 
-export const organizationProperties = `
+export const publisherProperties = `
     {
       ?id schema:name ?prefLabel__id .
       FILTER(lang(?prefLabel__id) = '')

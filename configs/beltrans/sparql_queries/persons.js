@@ -1,5 +1,5 @@
 const perspectiveID = 'persons'
-const manifestationsPerspectiveID = 'manifestations'
+const manifestationsPerspectiveID = 'translations'
 
 export const personProperties = `
     {

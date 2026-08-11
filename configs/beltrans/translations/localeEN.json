@@ -268,7 +268,7 @@
         }
       }
     },
-    "organizations": {
+    "publishers": {
       "label": "Publishers",
       "facetResultsType": "publishers",
       "shortDescription": "Publishers and other organisations (e.g. translation agencies) involved in book translation",
@@ -411,9 +411,9 @@
 
       }
     },
-    "originals": {
+    "source-titles": {
       "label": "Source titles",
-      "facetResultsType": "originals",
+      "facetResultsType": "source-titles",
       "shortDescription": "Source titles of the BELTRANS corpus",
       "longDescription": "<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> Use this entry point to access data related to source titles. See <a href=\"/instructions\">instructions</a> for using the filters. The result view can be selected using the tabs: </p> <ul class=\"MuiTypography-root MuiTypography-body1\"> <li> <strong>TABLE</STRONG> view gives you a list of source titles. </li> <li> <strong>EXPORT</strong> the SPARQL query used to generate the result table view. </li> </ul>",
       "instancePage": {

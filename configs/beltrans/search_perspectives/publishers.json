@@ -1,11 +1,11 @@
 {
-    "id": "organizations",
+    "id": "publishers",
     "endpoint": {
         "url": "http://ql-beltrans-dev-srv01:8001",
         "useAuth": false,
         "prefixesFile": "SparqlQueriesPrefixes.js"
     },
-    "sparqlQueriesFile": "organizations.js",
+    "sparqlQueriesFile": "publishers.js",
     "baseURI": "http://kbr.be/id/data",
     "URITemplate": "<BASE_URI>/<LOCAL_ID>",
     "facetClass": "schema:Organization",
@@ -19,13 +19,13 @@
     "defaultInstancePageTab": "table",
     "includeInSitemap": true,
     "resultClasses": {
-        "organizations": {
+        "publishers": {
             "paginatedResultsConfig": {
                 "tabID": 0,
                 "component": "ResultTable",
                 "tabPath": "table",
                 "tabIcon": "CalendarViewDay",
-                "propertiesQueryBlock": "organizationProperties",
+                "propertiesQueryBlock": "publisherProperties",
                 "paginatedResultsAlwaysExpandRows": false,
                 "paginatedResultsRowContentMaxHeight": 190,
                 "pagesize": 50,
@@ -33,7 +33,7 @@
                 "sortDirection": null
             },
             "instanceConfig": {
-                "propertiesQueryBlock": "organizationProperties",
+                "propertiesQueryBlock": "publisherProperties",
                 "instancePageResultClasses": {
                     "instancePageTable": {
                         "tabID": 0,
@@ -56,8 +56,8 @@
             "component": "Export",
             "tabPath": "export",
             "tabIcon": "CloudDownload",
-            "resultClass": "organizations",
-            "facetClass": "organizations"
+            "resultClass": "publishers",
+            "facetClass": "publishers"
         },
         "jenaText": {
             "propertiesQueryBlock": "fullTextSearchProperties"

@@ -1,8 +1,7 @@
 const perspectiveID = 'translations'
 const personsPerspectiveID = 'persons'
-const orgsPerspectiveID = 'organizations'
-const originalsPerspectiveID = 'originals'
-const workClustersPerspectiveID = 'workClusters'
+const orgsPerspectiveID = 'publishers'
+const originalsPerspectiveID = 'source-titles'
 
 export const manifestationProperties = `
     {

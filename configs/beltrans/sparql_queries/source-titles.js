@@ -1,10 +1,9 @@
-const perspectiveID = 'originals'
+const perspectiveID = 'source-titles'
 const personsPerspectiveID = 'persons'
-const orgsPerspectiveID = 'organizations'
-const manifestationsPerspectiveID = 'manifestations'
-const workClustersPerspectiveID = 'workClusters'
+const orgsPerspectiveID = 'publishers'
+const manifestationsPerspectiveID = 'translations'
 
-export const originalProperties = `
+export const sourceTitleProperties = `
     {
       ?id schema:name ?prefLabel__id .
       BIND(?prefLabel__id AS ?prefLabel__prefLabel)

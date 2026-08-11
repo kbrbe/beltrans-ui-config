@@ -6,8 +6,8 @@
         "searchPerspectives": [
             "translations",
             "persons",
-            "originals",
-            "organizations",
+            "source-titles",
+            "publishers",
             "fullTextSearch"
         ],
         "onlyInstancePages": [
