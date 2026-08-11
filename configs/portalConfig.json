@@ -1,6 +1,7 @@
 {
     "portalID": "beltrans",
     "rootUrl": "",
+    "staticsUrl": "",
     "perspectives": {
         "searchPerspectives": [
             "translations",
@@ -70,7 +71,7 @@
         },
         "mainPage": {
             "bannerImage": "main_page/brecht-evens-bib.jpg",
-            "bannerBackground": "linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url(<BANNER_IMAGE_URL)",
+            "bannerBackground": "linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url(http://localhost:3001/api/v1/configs/beltrans/assets/main_page/brecht-evens-bib.jpg)",
             "bannerMobileHeight": 150,
             "bannerReducedHeight": 220,
             "bannerDefaultHeight": 300,
@@ -92,7 +93,41 @@
         },
         "footer": {
             "reducedHeight": 44,
-            "defaultHeight": 64
+            "defaultHeight": 64,
+            "images": [
+              {
+                "id": "KBR",
+                "image": "logos/logo-kbr.png",
+                "href": "https://www.kbr.be/en/",
+                "alt": "Royal Library of Belgium (KBR) logo",
+                "width": 55,
+                "height": 44
+              },
+               {
+                "id": "KUL",
+                "image": "logos/logo-kul.png",
+                "href": "https://www.kuleuven.be/english/kuleuven/",
+                "alt": "KU Leuven logo",
+                "width": 55,
+                "height": 44
+              },
+              {
+                "id": "UCL",
+                "image": "logos/logo-ucl.png",
+                "href": "https://www.uclouvain.be/en",
+                "alt": "UC Louvain logo",
+                "width": 55,
+                "height": 44
+              },
+              {
+                "id": "belspo",
+                "image": "logos/logo-belspo.png",
+                "href": "https://www.belspo.be",
+                "alt": "BELSPO logo",
+                "width": 55,
+                "height": 44
+              }
+            ]
         }
     },
     "mapboxConfig": {
