@@ -121,15 +121,6 @@
     },
     "properties": [
         {
-            "id": "uri",
-            "valueType": "object",
-            "makeLink": true,
-            "externalLink": true,
-            "sortValues": true,
-            "numberedList": false,
-            "onlyOnInstancePage": true
-        }, 
-        {
             "id": "prefLabel",
             "valueType": "object",
             "makeLink": true,
@@ -328,6 +319,31 @@
         "prefLabel": {
             "sortByPredicate": "schema:name"
         },
+        "genre": {
+          "containerClass": "six",
+          "facetType": "list",
+          "filterType": "uriFilter",
+          "facetLabelFilter": "FILTER(LANG(?prefLabel_) = 'en')",
+          "predicate": "schema:about",
+          "searchField": true,
+          "sortButton": true,
+          "sortBy": "instanceCount",
+          "sortDirection": "desc",
+          "pieChartButton": true
+        },
+        "sourceLang": {
+          "containerClass": "four",
+          "facetType": "list",
+          "filterType": "uriFilter",
+          "facetLabelPredicate": "skos:prefLabel",
+          "facetLabelFilter": "FILTER(LANG(?prefLabel_) = 'en')",
+          "predicate": "schema:translationOfWork/schema:inLanguage",
+          "searchField": true,
+          "sortButton": true,
+          "sortBy": "instanceCount",
+          "sortByPredicate": "schema:translationOfWork/schema:inLanguage/skos:prefLabel",
+          "sortDirection": "desc"
+        },
         "targetLang": {
           "containerClass": "four",
           "facetType": "list",
@@ -425,18 +441,6 @@
           "sortBy": "instanceCount",
           "sortByPredicate": "schema:translationOfWork/marcrel:pbl/schema:name",
           "sortDirection": "desc"
-        },
-        "genre": {
-          "containerClass": "six",
-          "facetType": "list",
-          "filterType": "uriFilter",
-          "facetLabelFilter": "FILTER(LANG(?prefLabel_) = 'en')",
-          "predicate": "schema:about",
-          "searchField": true,
-          "sortButton": true,
-          "sortBy": "instanceCount",
-          "sortDirection": "desc",
-          "pieChartButton": true
         },
         "femaleAuthor": {
           "containerClass": "four",
