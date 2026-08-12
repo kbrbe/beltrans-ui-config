@@ -325,57 +325,57 @@
           "description": "Uniform Resource Identifier"
         },
         "prefLabel": {
-          "label": "Title",
-          "description": "The name or title of the translated book",
-          "textFacetInputPlaceholder": "Search..."
+          "label": "Target Title",
+          "description": "The title of the translation",
+          "textFacetInputPlaceholder": "Search title..."
         },
         "targetYearOfPublication": {
-          "label": "Year translation",
+          "label": "Year Translation",
           "description": "The year in which the translation was published"
         },
         "sourceLang": {
-          "label": "Language(s) source",
+          "label": "Source Language(s)",
           "description": "The language(s) of the source title(s)"
         },
         "targetLang": {
-          "label": "Language(s) translation",
+          "label": "Target Language(s)",
           "description": "The language(s) of the translated titles"
         },
         "isbn13": {
-          "label": "ISBN translation",
+          "label": "Target ISBN",
           "description": "The 13-digit International Standard Book Number of the translation"
         },
         "author": {
-          "label": "author",
-          "description": "The author(s) associated with the translation, based on the MARC relator term 'author' or 'scenarist'"
+          "label": "Author",
+          "description": "The author(s) associated with the translation, based on the MARC relator term 'author' or 'scenarist' https://www.loc.gov/marc/relators/relaterm.html"
         },
         "translator": {
-          "label": "translator",
-          "description": "The translator(s) associated with the translation, based on the MARC relator term 'translator' or 'adapter'"
+          "label": "Translator",
+          "description": "The translator(s) associated with the translation, based on the MARC relator term 'translator' or 'adapter' https://www.loc.gov/marc/relators/relaterm.html"
         },
         "illustrator": {
-          "label": "illustrator",
-          "description": "The illustrator(s) associated with the translation, based on the MARC relator term 'illustrator'"
+          "label": "Illustrator",
+          "description": "The illustrator(s) associated with the translation, based on the MARC relator term 'illustrator' https://www.loc.gov/marc/relators/relaterm.html"
         },
         "editor": {
-          "label": "editor",
-          "description": "The editor(s) associated with the translation, based on the MARC relator term 'publishing director'"
+          "label": "Editor",
+          "description": "The editor(s) associated with the translation, based on the MARC relator term 'publishing director' https://www.loc.gov/marc/relators/relaterm.html"
         },
         "targetPublisher": {
-          "label": "targetPublisher",
-          "description": "The publisher associated with the translation, based on the MARC relator term 'publisher'"
+          "label": "Target Publisher",
+          "description": "The publisher associated with the translation, based on the MARC relator term 'publisher' https://www.loc.gov/marc/relators/relaterm.html"
         },
         "original": {
-          "label": "Source title",
+          "label": "Source Title",
           "description": "The source title of this translation"
         },
         "sourcePublisher": {
-          "label": "sourcePublisher",
-          "description": "The publisher associated with the source of the translation, based on the MARC relator term 'publisher' of the linked source"
+          "label": "Source Publisher",
+          "description": "The publisher associated with the source of the translation, based on the MARC relator term 'publisher' of the linked source https://www.loc.gov/marc/relators/relaterm.html"
         },
         "genre": {
-          "label": "genre",
-          "description": "The genre of the translation according to the Belgian Bibliography"
+          "label": "Genre",
+          "description": "The genre of the translation according to the classification of the Belgian Bibliography https://www.kbr.be/en/collections/belgian-bibliography/"
         },
         "femaleAuthor": {
           "label": "Female Author",
