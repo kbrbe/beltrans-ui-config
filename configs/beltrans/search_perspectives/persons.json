@@ -102,26 +102,6 @@
             "minWidth": 20
         },
         {
-            "id": "familyName",
-            "valueType": "string",
-            "makeLink": false,
-            "externalLink": false,
-            "sortValues": true,
-            "numberedList": false,
-            "minWidth": 150
-        },
-        {
-            "id": "givenName",
-            "valueType": "string",
-            "makeLink": false,
-            "externalLink": false,
-            "sortValues": true,
-            "numberedList": false,
-            "minWidth": 200,
-            "collapsedMaxWords": 3,
-            "priority": 5
-        },
-        {
             "id": "birthDate",
             "valueType": "string",
             "makeLink": false,

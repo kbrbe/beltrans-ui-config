@@ -35,20 +35,6 @@ export const personProperties = `
     }
 
     #
-    # family name
-    #
-    UNION
-    {
-      ?id schema:familyName ?familyName .
-    }
-    #
-    # given name
-    #
-    UNION
-    {
-      ?id schema:givenName ?givenName .
-    }
-    #
     # gender
     #
     UNION
