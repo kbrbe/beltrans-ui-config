@@ -6,11 +6,11 @@
         "searchPerspectives": [
             "translations",
             "persons",
-            "source-titles",
             "publishers",
             "fullTextSearch"
         ],
         "onlyInstancePages": [
+            "source-titles"
         ]
     },
     "localeConfig": {
