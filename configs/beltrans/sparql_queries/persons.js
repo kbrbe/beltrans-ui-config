@@ -135,8 +135,41 @@ export const personProperties = `
            schema:name ?publishingDirectorOf__prefLabel .
       BIND(CONCAT("/${manifestationsPerspectiveID}/page/", REPLACE(STR(?mID), "^.*\\\\/(.+)", "$1")) AS ?publishingDirector__dataProviderUrl)
     }
-    
+
+    #
+    # numberAuthorOf
+    #
+    UNION
+    }
+        ?id btm:numberAuthorOf ?numberAuthorOf .
+    }
+
+    #
+    # numberTranslatorOf
+    #
+    UNION
+    }
+        ?id btm:numberTranslatorOf ?numberTranslatorOf .
+    }
+
+    #
+    # numberIllustratorOf
+    #
+    UNION
+    }
+        ?id btm:numberIllustratorOf ?numberIllustratorOf .
+    }
+
+    #
+    # numberEditorOf
+    #
+    UNION
+    }
+        ?id btm:numberEditorOf ?numberEditorOf .
+    }
+
 `
+
 
 export const knowledgeGraphMetadataQuery = `
   SELECT * 

@@ -65,13 +65,14 @@
     },
     "properties": [
         {
-            "id": "uri",
-            "valueType": "object",
+            "id": "numberContributions",
+            "valueType": "string",
             "makeLink": true,
-            "externalLink": true,
+            "externalLink": false,
             "sortValues": true,
             "numberedList": false,
-            "onlyOnInstancePage": true
+            "showSource": true,
+            "minWidth": 10
         },
         {
             "id": "prefLabel",
@@ -218,16 +219,6 @@
             "showSource": true,
             "minWidth": 10,
             "onlyOnInstancePage": true
-        },
-        {
-            "id": "numberContributions",
-            "valueType": "string",
-            "makeLink": true,
-            "externalLink": false,
-            "sortValues": true,
-            "numberedList": false,
-            "showSource": true,
-            "minWidth": 10
         }
     ],
     "facets": {
@@ -247,6 +238,41 @@
             "sortBy": "instanceCount",
             "sortDirection": "desc",
             "pieChartButton": true
+        },
+        "numberOfContributions": {
+            "containerClass": "five",
+            "facetType": "integer",
+            "filterType": "integerFilterRange",
+            "predicate": "btm:numberOfContributions",
+            "sortByPredicate": "btm:numberOfContributions"
+        },
+        "numberAuthorOf": {
+            "containerClass": "five",
+            "facetType": "integer",
+            "filterType": "integerFilterRange",
+            "predicate": "btm:numberAuthorOf",
+            "sortByPredicate": "btm:numberAuthorOf"
+        },
+        "numberTranslatorOf": {
+            "containerClass": "five",
+            "facetType": "integer",
+            "filterType": "integerFilterRange",
+            "predicate": "btm:numberTranslatorOf",
+            "sortByPredicate": "btm:numberTranslatorOf"
+        },
+        "numberIllustratorOf": {
+            "containerClass": "five",
+            "facetType": "integer",
+            "filterType": "integerFilterRange",
+            "predicate": "btm:numberIllustratorOf",
+            "sortByPredicate": "btm:numberIllustratorOf"
+        },
+        "numberEditorOf": {
+            "containerClass": "five",
+            "facetType": "integer",
+            "filterType": "integerFilterRange",
+            "predicate": "btm:numberEditorOf",
+            "sortByPredicate": "btm:numberEditorOf"
         },
         "gender": {
             "containerClass": "five",
