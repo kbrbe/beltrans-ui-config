@@ -228,7 +228,16 @@
             "numberedList": false,
             "minWidth": 100
         },
-                {
+        {
+            "id": "sourceIsbn13",
+            "valueType": "string",
+            "makeLink": false,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "minWidth": 20
+        },
+        {
             "id": "sourcePublisher",
             "valueType": "object",
             "makeLink": true,
@@ -433,6 +442,10 @@
           "sortDirection": "desc",
           "textQueryPredicate": "schema:translationOfWork",
           "textQueryProperty": "schema:name"
+        },
+        "sourceIsbn13": {
+            "facetType": "text", 
+            "filterType": "textFilter"
         },
         "sourcePublisher": {
           "containerClass": "ten",

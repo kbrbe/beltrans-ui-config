@@ -345,6 +345,10 @@
           "label": "Target ISBN",
           "description": "The 13-digit International Standard Book Number of the translation"
         },
+        "sourceIsbn13": {
+          "label": "Source ISBN",
+          "description": "The 13-digit International Standard Book Number of the source title"
+        },
         "author": {
           "label": "Author",
           "description": "The author(s) associated with the translation, based on the MARC relator term 'author' or 'scenarist' https://www.loc.gov/marc/relators/relaterm.html"

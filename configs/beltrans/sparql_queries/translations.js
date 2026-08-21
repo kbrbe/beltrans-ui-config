@@ -121,6 +121,14 @@ export const manifestationProperties = `
                     dcterms:identifier ?sourceID .
       BIND(CONCAT("/${originalsPerspectiveID}/page/", REPLACE(STR(?sourceID), "^.*\\\\/(.+)", "$1")) AS ?original__dataProviderUrl) 
     }
+    #
+    # SOURCE ISBN-13
+    #
+    UNION
+    {
+      ?id schema:translationOfWork ?original__id .
+      ?original__id bibo:isbn13 ?sourceIsbn13 .
+    }
 
 
     #
