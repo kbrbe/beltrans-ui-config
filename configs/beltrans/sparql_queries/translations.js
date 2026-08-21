@@ -121,6 +121,8 @@ export const manifestationProperties = `
                     dcterms:identifier ?sourceID .
       BIND(CONCAT("/${originalsPerspectiveID}/page/", REPLACE(STR(?sourceID), "^.*\\\\/(.+)", "$1")) AS ?original__dataProviderUrl) 
     }
+
+
     #
     # source publisher
     #

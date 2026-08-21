@@ -228,7 +228,7 @@
             "numberedList": false,
             "minWidth": 100
         },
-        {
+                {
             "id": "sourcePublisher",
             "valueType": "object",
             "makeLink": true,
@@ -331,6 +331,10 @@
           "sortDirection": "desc",
           "pieChartButton": true
         },
+        "isbn13": {
+            "facetType": "text", 
+            "filterType": "textFilter"
+        },
         "sourceLang": {
           "containerClass": "four",
           "facetType": "list",
@@ -419,17 +423,17 @@
         },
         "original": {
           "containerClass": "ten",
-          "facetType": "list",
-          "filterType": "uriFilter",
+          "facetType": "text",
+          "filterType": "textFilter",
           "facetLabelPredicate": "schema:name",
           "predicate": "schema:translationOfWork",
           "searchField": true,
           "sortButton": true,
-          "sortBy": "instanceCount",
           "sortByPredicate": "schema:translationOfWork/schema:name",
-          "sortDirection": "desc"
+          "sortDirection": "desc",
+          "textQueryPredicate": "schema:translationOfWork",
+          "textQueryProperty": "schema:name"
         },
-
         "sourcePublisher": {
           "containerClass": "ten",
           "facetType": "list",
