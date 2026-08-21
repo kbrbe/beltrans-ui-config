@@ -190,7 +190,7 @@
             "onlyOnInstancePage": true
         },
         {
-            "id": "publishingDirectorOf",
+            "id": "editorOf",
             "valueType": "object",
             "makeLink": true,
             "externalLink": false,

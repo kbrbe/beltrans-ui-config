@@ -112,14 +112,14 @@ export const personProperties = `
     }
 
     #
-    # publishingDirectorOf
+    # editorOf
     #
     UNION
     {
-        ?publishingDirectorOf__id marcrel:pbd ?id ;
+        ?editorOf__id marcrel:pbd ?id ;
            dcterms:identifier ?mID ;
-           schema:name ?publishingDirectorOf__prefLabel .
-      BIND(CONCAT("/${manifestationsPerspectiveID}/page/", REPLACE(STR(?mID), "^.*\\\\/(.+)", "$1")) AS ?publishingDirector__dataProviderUrl)
+           schema:name ?editorOf__prefLabel .
+      BIND(CONCAT("/${manifestationsPerspectiveID}/page/", REPLACE(STR(?mID), "^.*\\\\/(.+)", "$1")) AS ?editorOf__dataProviderUrl)
     }
 
     #

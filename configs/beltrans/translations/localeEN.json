@@ -258,9 +258,9 @@
           "label": "illustrator of",
           "description": "A translation where this person contributed as illustrator (MARC21 relator code 'illustrator')"
         },
-        "publishingDirectorOf": {
-          "label": "publishing director of",
-          "description": "A translation where this person contributed as publishing director (MARC21 relator code 'publishing director')"
+        "editorOf": {
+          "label": "editor of",
+          "description": "A translation where this person contributed as editor (MARC21 relator code 'publishing director')"
         },
         "numberContributions": {
           "label": "number of contributions",
@@ -388,10 +388,12 @@
         "femaleTranslator": {
           "label": "Female Translator",
           "description": "At least one of the translators is female (based on the MARC relator terms 'translator' and 'adapter')"
-        },                                                                                                                                                     "femaleIllustrator": {
+        },                                                                                                                                                     
+        "femaleIllustrator": {
           "label": "Female illustrator",
           "description": "At least one of the editors is female (based on the MARC relator term 'illustrator')"
-        },                                                                                                                                                     "femaleEditor": {
+        },                                                                                                                                                     
+        "femaleEditor": {
           "label": "Female editor",
           "description": "At least one of the editors is female (based on the MARC relator term 'publishing director')"
         },
@@ -462,7 +464,7 @@
           "label": "Illustrator",
           "description": "The illustrator(s) associated with the source title, based on the MARC relator term 'illustrator'"
         },
-       "publishingDirector": {
+       "editor": {
           "label": "Editor",
           "description": "The editor(s) associated with the source title, based on the MARC relator term 'publishing director'"
         },
