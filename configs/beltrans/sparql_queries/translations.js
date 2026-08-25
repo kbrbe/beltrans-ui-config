@@ -154,43 +154,43 @@ export const manifestationProperties = `
     }
 
     #
-    # female author
+    # gender author
     #
     UNION
     {
-      ?id btm:hasFemaleAuthor ?femaleAuthor__id . 
-      ?femaleAuthor__id skos:prefLabel ?femaleAuthor__prefLabel . 
-      FILTER(LANG(?femaleAuthor__prefLabel) = 'en')
+      ?id btm:authorGenderCategory ?genderAuthor__id . 
+      ?genderAuthor__id skos:prefLabel ?genderAuthor__prefLabel . 
+      FILTER(LANG(?genderAuthor__prefLabel) = 'en')
     }
 
     #
-    # female translator
+    # gender translator
     #
     UNION
     {
-      ?id btm:hasFemaleTranslator ?femaleTranslator__id .
-      ?femaleTranslator__id skos:prefLabel ?femaleTranslator__prefLabel .
-      FILTER(LANG(?femaleTranslator__prefLabel) = 'en')
+      ?id btm:translatorGenderCategory ?genderTranslator__id .
+      ?genderTranslator__id skos:prefLabel ?genderTranslator__prefLabel .
+      FILTER(LANG(?genderTranslator__prefLabel) = 'en')
     }
 
     #
-    # female illustrator
+    # gender illustrator
     #
     UNION
     {
-      ?id btm:hasFemaleIllustrator ?femaleIllustrator__id .
-      ?femaleIllustrator__id skos:prefLabel ?femaleIllustrator__prefLabel .
-      FILTER(LANG(?femaleIllustrator__prefLabel) = 'en')
+      ?id btm:illustratorGenderCategory ?genderIllustrator__id .
+      ?genderIllustrator__id skos:prefLabel ?genderIllustrator__prefLabel .
+      FILTER(LANG(?genderIllustrator__prefLabel) = 'en')
     }
 
     #
-    # female editor
+    # gender editor
     #
     UNION
     {
-      ?id btm:hasFemaleEditor ?femaleEditor__id .
-      ?femaleEditor__id skos:prefLabel ?femaleEditor__prefLabel .
-      FILTER(LANG(?femaleEditor__prefLabel) = 'en')
+      ?id btm:editorGenderCategory ?genderEditor__id .
+      ?genderEditor__id skos:prefLabel ?genderEditor__prefLabel .
+      FILTER(LANG(?genderEditor__prefLabel) = 'en')
     }
 
     #

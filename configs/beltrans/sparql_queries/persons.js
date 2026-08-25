@@ -126,23 +126,25 @@ export const personProperties = `
     # numberAuthorOf
     #
     UNION
-    }
-        ?id btm:numberAuthorOf ?numberAuthorOf .
+    {
+        ?id btm:numberAuthorOf ?numberAuthorOfValue .
+        BIND(xsd:integer(?numberAuthorOfValue) AS ?numberAuthorOf)
     }
 
     #
     # numberTranslatorOf
     #
     UNION
-    }
-        ?id btm:numberTranslatorOf ?numberTranslatorOf .
+    {
+        ?id btm:numberTranslatorOf ?numberTranslatorOfValue .
+        BIND(str(?numberTranslatorOfValue) AS ?numberTranslatorOf)
     }
 
     #
     # numberIllustratorOf
     #
     UNION
-    }
+    {
         ?id btm:numberIllustratorOf ?numberIllustratorOf .
     }
 
@@ -150,7 +152,7 @@ export const personProperties = `
     # numberEditorOf
     #
     UNION
-    }
+    {
         ?id btm:numberEditorOf ?numberEditorOf .
     }
 

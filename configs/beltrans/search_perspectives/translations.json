@@ -8,7 +8,7 @@
     "sparqlQueriesFile": "translations.js",
     "baseURI": "http://kbr.be/id/data",
     "URITemplate": "<BASE_URI>/<LOCAL_ID>",
-    "facetClass": "btm:BeltransGenreTranslation",
+    "facetClass": "btm:BeltransTranslation",
     "frontPageImage": "main_page/Translations.jpg",
     "searchMode": "faceted-search",
     "enableDynamicLanguageChange": false,
@@ -247,7 +247,7 @@
             "minWidth": 50
         },
         {
-            "id": "femaleAuthor",
+            "id": "genderAuthor",
             "valueType": "object",
             "makeLink": false,
             "externalLink": false,
@@ -256,7 +256,7 @@
             "minWidth": 10
         },
         {
-            "id": "femaleTranslator",
+            "id": "genderTranslator",
             "valueType": "object",
             "makeLink": false,
             "externalLink": false,
@@ -265,7 +265,7 @@
             "minWidth": 10
         },
         {
-            "id": "femaleIllustrator",
+            "id": "genderIllustrator",
             "valueType": "object",
             "makeLink": false,
             "externalLink": false,
@@ -274,7 +274,7 @@
             "minWidth": 10
         },
         {
-            "id": "femaleEditor",
+            "id": "genderEditor",
             "valueType": "object",
             "makeLink": false,
             "externalLink": false,
@@ -459,59 +459,59 @@
           "sortByPredicate": "schema:translationOfWork/marcrel:pbl/schema:name",
           "sortDirection": "desc"
         },
-        "femaleAuthor": {
+        "genderAuthor": {
           "containerClass": "four",
           "facetType": "list",
           "filterType": "uriFilter",
           "facetLabelPredicate": "skos:prefLabel",
           "facetLabelFilter": "FILTER(LANG(?prefLabel_) = 'en')",
-          "predicate": "btm:hasFemaleAuthor",
+          "predicate": "btm:authorGenderCategory",
           "searchField": true,
           "sortButton": true,
           "sortBy": "instanceCount",
-          "sortByPredicate": "btm:hasFemaleAuthor/skos:prefLabel",
+          "sortByPredicate": "btm:authorGenderCategory/skos:prefLabel",
           "sortDirection": "desc",
           "pieChartButton": true
         },
-        "femaleTranslator": {
+        "genderTranslator": {
           "containerClass": "four",
           "facetType": "list",
           "filterType": "uriFilter",
           "facetLabelPredicate": "skos:prefLabel",
           "facetLabelFilter": "FILTER(LANG(?prefLabel_) = 'en')",
-          "predicate": "btm:hasFemaleTranslator",
+          "predicate": "btm:translatorGenderCategory",
           "searchField": true,
           "sortButton": true,
           "sortBy": "instanceCount",
-          "sortByPredicate": "btm:hasFemaleTranslator/skos:prefLabel",
+          "sortByPredicate": "btm:translatorGenderCategory/skos:prefLabel",
           "sortDirection": "desc",
           "pieChartButton": true
         },
-        "femaleIllustrator": {
+        "genderIllustrator": {
           "containerClass": "four",
           "facetType": "list",
           "filterType": "uriFilter",
           "facetLabelPredicate": "skos:prefLabel",
           "facetLabelFilter": "FILTER(LANG(?prefLabel_) = 'en')",
-          "predicate": "btm:hasFemaleIllustrator",
+          "predicate": "btm:illustratorGenderCategory",
           "searchField": true,
           "sortButton": true,
           "sortBy": "instanceCount",
-          "sortByPredicate": "btm:hasFemaleIllustrator/skos:prefLabel",
+          "sortByPredicate": "btm:illustratorGenderCategory/skos:prefLabel",
           "sortDirection": "desc",
           "pieChartButton": true
         },
-        "femaleEditor": {
+        "genderEditor": {
           "containerClass": "four",
           "facetType": "list",
           "filterType": "uriFilter",
           "facetLabelPredicate": "skos:prefLabel",
           "facetLabelFilter": "FILTER(LANG(?prefLabel_) = 'en')",
-          "predicate": "btm:hasFemaleEditor",
+          "predicate": "btm:editorGenderCategory",
           "searchField": true,
           "sortButton": true,
           "sortBy": "instanceCount",
-          "sortByPredicate": "btm:hasFemaleEditor/skos:prefLabel",
+          "sortByPredicate": "btm:editorGenderCategory/skos:prefLabel",
           "sortDirection": "desc",
           "pieChartButton": true
         }

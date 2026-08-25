@@ -265,6 +265,22 @@
         "numberContributions": {
           "label": "number of contributions",
           "description": "The number of translations in which this person contributed in any of the following roles: author, translator, illustrator or editor"
+        },
+        "numberAuthorOf": {
+          "label": "number of author contributions",
+          "description": "The number of translations in which this person contributed as author"
+        },
+        "numberTranslatorOf": {
+          "label": "number of translator contributions",
+          "description": "The number of translations in which this person contributed as translator"
+        },
+        "numberIllustratorOf": {
+          "label": "number of illustrator contributions",
+          "description": "The number of translations in which this person contributed as illustrator"
+        },
+        "numberEditorOf": {
+          "label": "number of editor contributions",
+          "description": "The number of translations in which this person contributed as editor"
         }
       }
     },
@@ -381,21 +397,21 @@
           "label": "Genre",
           "description": "The genre of the translation according to the classification of the Belgian Bibliography https://www.kbr.be/en/collections/belgian-bibliography/"
         },
-        "femaleAuthor": {
-          "label": "Female Author",
-          "description": "At least one of the authors is female (based on the MARC relator terms 'author' and 'scenarist')"
+        "genderAuthor": {
+          "label": "Gender Author(s)",
+          "description": "BELTRANS gender category of author(s)"
         },
-        "femaleTranslator": {
-          "label": "Female Translator",
-          "description": "At least one of the translators is female (based on the MARC relator terms 'translator' and 'adapter')"
+        "genderTranslator": {
+          "label": "Gender Translator(s)",
+          "description": "BELTRANS gender category of translator(s)"
         },                                                                                                                                                     
-        "femaleIllustrator": {
-          "label": "Female illustrator",
-          "description": "At least one of the editors is female (based on the MARC relator term 'illustrator')"
+        "genderIllustrator": {
+          "label": "Gender Illustrator(s)",
+          "description": "BELTRANS gender category of illustrator(s)"
         },                                                                                                                                                     
-        "femaleEditor": {
-          "label": "Female editor",
-          "description": "At least one of the editors is female (based on the MARC relator term 'publishing director')"
+        "genderEditor": {
+          "label": "Gender editor(s)",
+          "description": "BELTRANS gender category of editor(s)"
         },
         "kbrIdentifier": {
           "label": "Provenance KBR",

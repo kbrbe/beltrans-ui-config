@@ -168,17 +168,6 @@
             "onlyOnInstancePage": true
         },
         {
-            "id": "scenaristOf",
-            "valueType": "object",
-            "makeLink": true,
-            "externalLink": false,
-            "sortValues": true,
-            "numberedList": false,
-            "showSource": true,
-            "minWidth": 10,
-            "onlyOnInstancePage": true
-        },
-        {
             "id": "illustratorOf",
             "valueType": "object",
             "makeLink": true,
@@ -199,7 +188,42 @@
             "showSource": true,
             "minWidth": 10,
             "onlyOnInstancePage": true
+        },
+        {
+            "id": "numberAuthorOf",
+            "valueType": "string",
+            "sortValues": true,
+            "minWidth": 10
+        },
+        {
+            "id": "numberTranslatorOf",
+            "valueType": "string",
+            "sortValues": true,
+            "numberedList": false,
+            "showSource": true,
+            "minWidth": 10
+        },
+        {
+            "id": "numberIllustratorOf",
+            "valueType": "string",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "showSource": true,
+            "minWidth": 10
+        },
+        {
+            "id": "numberEditorOf",
+            "valueType": "string",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "showSource": true,
+            "minWidth": 10
         }
+
     ],
     "facets": {
         "prefLabel": {
@@ -231,6 +255,8 @@
             "facetType": "integer",
             "filterType": "integerFilterRange",
             "predicate": "btm:numberAuthorOf",
+            "sortButton": true,
+            "sortDirection": "desc",
             "sortByPredicate": "btm:numberAuthorOf"
         },
         "numberTranslatorOf": {
