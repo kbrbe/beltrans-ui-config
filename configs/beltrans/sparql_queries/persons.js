@@ -123,12 +123,19 @@ export const personProperties = `
     }
 
     #
+    # numberContributions
+    #
+    UNION
+    {
+        ?id btm:numberManifestations ?numberOfContributions .
+    }
+
+    #
     # numberAuthorOf
     #
     UNION
     {
-        ?id btm:numberAuthorOf ?numberAuthorOfValue .
-        BIND(xsd:integer(?numberAuthorOfValue) AS ?numberAuthorOf)
+        ?id btm:numberAuthorOf ?numberAuthorOf .
     }
 
     #

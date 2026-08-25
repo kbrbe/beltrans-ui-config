@@ -190,6 +190,12 @@
             "onlyOnInstancePage": true
         },
         {
+            "id": "numberOfContributions",
+            "valueType": "string",
+            "sortValues": true,
+            "minWidth": 10
+        },
+        {
             "id": "numberAuthorOf",
             "valueType": "string",
             "sortValues": true,
@@ -247,8 +253,8 @@
             "containerClass": "five",
             "facetType": "integer",
             "filterType": "integerFilterRange",
-            "predicate": "btm:numberOfContributions",
-            "sortByPredicate": "btm:numberOfContributions"
+            "predicate": "btm:numberManifestations",
+            "sortByPredicate": "btm:numberManifestations"
         },
         "numberAuthorOf": {
             "containerClass": "five",

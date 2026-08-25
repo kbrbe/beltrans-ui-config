@@ -262,7 +262,7 @@
           "label": "editor of",
           "description": "A translation where this person contributed as editor (MARC21 relator code 'publishing director')"
         },
-        "numberContributions": {
+        "numberOfContributions": {
           "label": "number of contributions",
           "description": "The number of translations in which this person contributed in any of the following roles: author, translator, illustrator or editor"
         },
