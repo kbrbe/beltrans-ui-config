@@ -165,6 +165,26 @@ export const personProperties = `
 
 `
 
+export const qleverFacetResultSetQuery = `
+  SELECT *
+  WHERE {
+    {
+      # score and literal are used only for Jena full text index
+      SELECT DISTINCT ?id ?score ?literal ?orderBy {
+        <FILTER>
+        VALUES ?facetClass { <FACET_CLASS> }
+        ?id <FACET_CLASS_PREDICATE> ?facetClass .
+        <ORDER_BY_TRIPLE>
+      }
+      <ORDER_BY>
+      <PAGE>
+    }
+    FILTER(BOUND(?id))
+    <RESULT_SET_PROPERTIES>
+  }
+  <ORDER_BY>
+`
+
 
 export const knowledgeGraphMetadataQuery = `
   SELECT * 

@@ -6,6 +6,9 @@
         "prefixesFile": "SparqlQueriesPrefixes.js"
     },
     "sparqlQueriesFile": "persons.js",
+    "generalQueries": {
+      "facetResultSetQuery": "qleverFacetResultSetQuery"
+    },
     "baseURI": "http://kbr.be/id/data",
     "URITemplate": "<BASE_URI>/<LOCAL_ID>",
     "facetClass": "schema:Person",
@@ -64,16 +67,6 @@
         }
     },
     "properties": [
-        {
-            "id": "numberContributions",
-            "valueType": "string",
-            "makeLink": true,
-            "externalLink": false,
-            "sortValues": true,
-            "numberedList": false,
-            "showSource": true,
-            "minWidth": 10
-        },
         {
             "id": "prefLabel",
             "valueType": "object",
@@ -143,6 +136,16 @@
             "numberedList": false,
             "showSource": true,
             "sourceExternalLink": true,
+            "minWidth": 10
+        },
+        {
+            "id": "numberContributions",
+            "valueType": "string",
+            "makeLink": true,
+            "externalLink": false,
+            "sortValues": true,
+            "numberedList": false,
+            "showSource": true,
             "minWidth": 10
         },
         {
