@@ -4,6 +4,7 @@
     "staticsUrl": "",
     "perspectives": {
         "searchPerspectives": [
+            "about",
             "translations",
             "persons",
             "publishers",
@@ -64,7 +65,8 @@
             "infoDropdown": [
                 {
                     "id": "about",
-                    "translatedText": "aboutThePortal",
+                    "externalLink": false,
+                    "translatedText": "aboutPage",
                     "internalLink": "/about"
                 }
             ]
