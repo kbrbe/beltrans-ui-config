@@ -7,8 +7,7 @@
             "about",
             "translations",
             "persons",
-            "publishers",
-            "fullTextSearch"
+            "publishers"
         ],
         "onlyInstancePages": [
             "source-titles"
@@ -26,11 +25,11 @@
         ]
     },
     "sitemapConfig": {
-        "baseUrl": "https://sampo-ui.demo.seco.cs.aalto.fi",
+        "baseUrl": "https://beltrans.kbr.be",
         "langPrimary": "en",
         "langSecondary": "nl",
         "outputDir": "./src/server/sitemap_generator",
-        "sitemapUrl": "https://sampo-ui.demo.seco.cs.aalto.fi/sitemap",
+        "sitemapUrl": "https://beltrans.kbr.be/sitemap",
         "sitemapInstancePageQuery": "sitemapInstancePageQuery"
     },
     "knowledgeGraphMetadataConfig": {
