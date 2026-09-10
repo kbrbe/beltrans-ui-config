@@ -52,6 +52,7 @@
         "tableFontSize": "0.8rem",
         "topBar": {
             "logoImage": "logos/beltrans-logo.png",
+            "showSearchField": false,
             "logoTextTransform": "none",
             "hideLogoTextOnMobile": true,
             "showLanguageButton": true,
