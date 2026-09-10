@@ -64,9 +64,9 @@
             "mobileMenuBreakpoint": 1360,
             "infoDropdown": [
                 {
-                    "id": "about",
+                    "id": "infoPage",
                     "externalLink": false,
-                    "translatedText": "aboutPage",
+                    "translatedText": "infoPage",
                     "internalLink": "/about"
                 }
             ]

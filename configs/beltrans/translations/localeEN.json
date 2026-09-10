@@ -1,5 +1,6 @@
 {
-  "aboutPage": "htmlFile:pages/about_en.html",
+  "infoPage": "htmlFile:pages/about_en.html",
+  "instructions": "htmlFile:pages/instructions_en.html",
   "languageLabel": "English",
   "html": {
     "title": "BELTRANS database",
@@ -20,7 +21,7 @@
   "topBar": {
     "info": {
       "info": "Info",
-      "aboutPage": "About the BELTRANS database"
+      "infoPage": "About the BELTRANS database"
     },
     "instructions": "instructions"
   },
@@ -169,20 +170,7 @@
     }
   },
   "perspectives": {
-    "fullTextSearch": {
-      "properties": {
-        "prefLabel": {
-          "label": "Label"
-        },
-        "type": {
-          "label": "Type"
-        },
-        "note": {
-          "label": "Note"
-        }
-      }
-    },
-    "about": {
+    "infoPage": {
       "label": "About BELTRANS",
       "shortDescription": "More information about the BELTRANS database",
       "longDescription": ""
@@ -492,8 +480,6 @@
       }
     }
   },        
-  "instructions": "htmlFile:pages/instructions_en.html",
-  "feedback": "<h1 class=\"MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom\"> Feedback </h1> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> This semantic portal has been developed by the BELTRANS team from KBR, KU Leuven and UCLouvain.</p> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> We are interested in your feedback on the functionality, coverage, and usefulness of this portal and its data. </p> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> Please complete our <a href=\"\" target='_blank' rel='noopener noreferrer'>Feedback Survey Form (add link).</a> </p> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> You can also contact us via email: beltrans@kbr.be</p> <p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-paragraph\"> Please be aware that this portal’s response times may be affected by the size and complexity of the underlying knowledge graph. </p>",
   "exportLink": {
     "viewLabel": "Tab",
     "viewInstructions": "Choose the tab in which the query will open",
