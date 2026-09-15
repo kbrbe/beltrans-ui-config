@@ -63,6 +63,13 @@
             "instanceConfig": {
                 "propertiesQueryBlock": "manifestationProperties",
                 "createPopUpContent": "createPopUpContentDefault"
+            },
+            "customTilesLayer": {
+              "type": "pmtiles",
+              "inConfig": true,
+              "url": "maps/world-z7.pmtiles",
+              "maxZoom": 7,
+              "minZoom": 5
             }
         },
         "sourceTargetMap": {
@@ -85,6 +92,13 @@
                     "minAllowed": 2,
                     "maxAllowed": 20
                 }
+            },
+            "customTilesLayer": {
+              "type": "pmtiles",
+              "inConfig": true,
+              "url": "maps/world-z7.pmtiles",
+              "maxZoom": 7,
+              "minZoom": 5
             }
 
         },
