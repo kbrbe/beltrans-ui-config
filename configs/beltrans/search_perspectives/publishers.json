@@ -137,7 +137,11 @@
     ],
     "facets": {
         "prefLabel": {
-            "sortByPredicate": "schema:name"
+            "sortByPredicate": "schema:name",
+            "facetType": "text",
+            "filterType": "textFilter",
+            "textQueryProperty": "schema:name",
+            "textQueryType": "regex"
         },
         "location": {
             "containerClass": "five",
