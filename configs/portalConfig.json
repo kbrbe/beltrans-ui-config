@@ -73,7 +73,7 @@
         },
         "mainPage": {
             "bannerImage": "main_page/brecht-evens-bib.jpg",
-            "bannerBackground": "linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url(http://localhost:3001/api/v1/configs/beltrans/assets/main_page/brecht-evens-bib.jpg)",
+            "bannerBackground": "linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url(<BANNER_IMAGE_URL>)",
             "bannerMobileHeight": 150,
             "bannerReducedHeight": 220,
             "bannerDefaultHeight": 300,
