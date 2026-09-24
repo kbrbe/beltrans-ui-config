@@ -340,7 +340,11 @@
     ],
     "facets": {
         "prefLabel": {
-            "sortByPredicate": "schema:name"
+            "sortByPredicate": "schema:name",
+            "facetType": "text",
+            "filterType": "textFilter",
+            "textQueryProperty": "schema:name",
+            "textQueryType": "regex"
         },
         "genre": {
           "containerClass": "six",
@@ -356,7 +360,9 @@
         },
         "isbn13": {
             "facetType": "text", 
-            "filterType": "textFilter"
+            "filterType": "textFilter",
+            "textQueryProperty": "bibo:isbn13",
+            "textQueryType": "regex"
         },
         "sourceLang": {
           "containerClass": "four",
@@ -449,17 +455,18 @@
           "facetType": "text",
           "filterType": "textFilter",
           "facetLabelPredicate": "schema:name",
-          "predicate": "schema:translationOfWork",
           "searchField": true,
           "sortButton": true,
           "sortByPredicate": "schema:translationOfWork/schema:name",
           "sortDirection": "desc",
-          "textQueryPredicate": "schema:translationOfWork",
-          "textQueryProperty": "schema:name"
+          "textQueryProperty": "schema:translationOfWork/schema:name",
+          "textQueryType": "regex"
         },
         "sourceIsbn13": {
             "facetType": "text", 
-            "filterType": "textFilter"
+            "filterType": "textFilter",
+            "textQueryProperty": "schema:translationOfWork/schema:name",
+            "textQueryType": "regex"
         },
         "sourcePublisher": {
           "containerClass": "ten",
